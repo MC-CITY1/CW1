@@ -1,0 +1,280 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+/* Background  */
+html{
+  scroll-behavior: smooth;
+  color: white;
+}
+body{
+  background-image: url(https://media.istockphoto.com/photos/chaotic-black-low-poly-surface-abstract-3d-render-picture-id944880340?b=1&k=20&m=944880340&s=170667a&w=0&h=TEeHm7H-f1GBjv9c0Ai6iAx3mHqAPLX_UNtz0-tOUms=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* Nav */
+header{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-link, li{
+  text-decoration: none;
+  list-style: none;
+  margin: 20px;
+  font-size: 1.2rem;
+  font-family: monospace;
+  color: white;
+}
+
+.nav-item:not(:last-child)::after {
+  content: "|";
+  display: inline-block;
+  margin-right: 10px;
+}
+/* Main Sections */
+#Home, #About, #Education, #Skills{
+  height: 900px;;
+  color: white;
+}
+
+/* Home page */
+#Home{
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 2.6rem;
+  font-family:monospace;
+}
+
+/* About section */
+.aboutTitle{
+  font-size: 1.8rem;
+  font-family: monospace;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin-bottom: 130px;
+  text-decoration: underline;
+  color: white;
+}
+#About{
+  color: black;
+}
+
+.aboutContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:-10px;
+}
+
+/* profile */
+.profile_div{
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  box-shadow: 2px 2px 2px 2px;
+  border-radius:2px;
+}
+
+.profileTitle{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: monospace;
+  padding: 1.3rem;
+  text-decoration: underline;
+}
+
+.bio-info{
+  line-height: 3rem;
+  text-align: left;
+}
+li{
+  font-size: 1.1rem;
+  color: black;
+}
+
+.info_div{
+  background-color: white;
+  width: 900px;
+  height: 500px;
+  box-shadow: 2px 2px 2px 2px;
+  border-radius:2px;
+}
+
+.profileTitle2{
+  font-size: 1.5rem;
+  font-family: monospace;
+  padding: 1.3rem;
+  text-decoration: underline;
+  margin-left: 30px;
+}
+
+.info_text{
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 2.5rem;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-family: monospace;
+}
+
+.abVid{
+  margin-left: 30px;  
+  width: 95%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.imgab{
+  margin-top: 30px;
+  margin-left: 50px;
+  width: auto;
+  height: 160px;
+}
+/* Education Section */
+#Education{
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.educationContainer{
+  width:90%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Education cards gcse alevel uni */
+.educard{
+  width: 90%;
+  height: 25  0px;
+  background-color: white ;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px 1px;
+  color: black;
+  border-radius: 10px;
+}
+
+
+.level{
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 1.4rem;
+  margin-left: 30px;
+}
+
+.place{
+  font-family: monospace;
+  font-size: 1.3rem;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.grades{
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin-left: 30px;
+}
+
+.EducationTitle{
+  font-size: 2.5rem;
+  font-family: monospace;
+  text-align: center;
+  padding: 1em;
+  text-decoration: underline;
+}
+
+/* Skills sections */
+#Skills{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.skillContainer{
+  width: 90%;
+  height: 700px;
+  background-color: rgba(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  font-family: monospace;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.skillsTitle{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: monospace;
+  text-decoration: underline;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.skillname{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.skill-grid{  
+  width: 80%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.skillimg{
+  height: 150px;
+}
+
+/* W3 SCHOOLS https://www.w3schools.com/howto/howto_css_skill_bar.asp */
+.container {
+  width: 80%; 
+  background-color: #ddd; 
+  margin-bottom: 50px;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  color: white; 
+}
+
+.html {width: 90%; background-color: #04AA6D;} 
+.css {width: 90%; background-color: #2196F3;} 
+.js {width: 85%; background-color: #f44336;} 
+.python{width: 60%; background-color: #808080;} 
+.java{width: 60%; background-color: #07610d;} 
